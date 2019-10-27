@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container" id="app">
+        <div class="jumbotron">
+            <h1 class="text-center">
+                Currency Converter
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header bg-danger text-white" id="conver-from">
+                        Convert from :
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <select id="to" class="form-control to">
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                        15/2019/10
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header bg-danger text-white" id="conver-to">
+                        Convert to :
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <select id="from" class="form-control from">
+                                <!-- <option data-id="">
+                                   <p></p>
+                                </option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-primary text-white">
+                        15/2019/10
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="form-group text-center">
+                        <input type="number" class="form-control mt-3" placeholder="Please Enter Amount">
+                    </div>
+                    <div class="text-center">
+                        <button id="convert" class="btn btn-lg btn-success mt-3">
+                            Convert All
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3 ">
+                    <h2 class="text-center text-white mt-3 bg-danger"><span id="curNumber"></span> Result : <span
+                            id="toNumber"></span>
+                    </h2>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
